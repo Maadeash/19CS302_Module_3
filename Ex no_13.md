@@ -1,37 +1,47 @@
-# EX 12 C program to check whether the given number is prime or not using function without return type and with arguments.
-## DATE:
+# EX 13 To write a C program to read the elements and print only the odd elements in the 2D array.
+## DATE: 
 ## AIM:
-To write a C program to check whether the given number is prime or not using function without return type and with arguments.
+To write a C program to read the elements and print only the odd elements in the 2D array.
 
 ## Algorithm:
-1. Start
-2. Declare the variable i.
-3. Read the value given using scanf.
-4. Check whether the given number is prime or not using if-else statement condition.
-5. If true,print ("%d is a prime number.",i).
-6. If false, print ("%d is not a prime number.",i).
-7. End. 
+1. Start.
+2. Define a variables i,j,n,a.
+3. Write program to find n x n matrix.
+4. Read the value using scanf.
+5. Ask the user to make an input
+6. Print out the answer.
+7. End.
 
 ## Program:
 ```c program
+#include<stdio.h> 
 int main()
 {
-int i; 
-scanf("%d",&i);
-if(i%2==1 && i%1==0)
+int i,j,n,a[10][10];
+scanf("%d",&n); 
+for(i=0;i<n;i++)
 {
-printf("%d is a prime number.",i);
+for(j=0;j<n;j++)
+{
+scanf("%d",&a[i][j]);
 }
-else
+}for(i=0;i<n;i++)
 {
-printf("%d is not a prime number.",i);
+for(j=0;j<=n;j++)
+{
+if(a[i][j]%2==1)
+{
+printf("a[%d][%d] is %d \n",i,j,a[i][j]);
+}
+}
+printf("\n");
 }
 return 0;
 }
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/aff9d795-17d7-4f50-a802-5002f9b71a79)
+![image](https://github.com/user-attachments/assets/56b4ee82-f330-43a6-b32f-55daacc70ab5)
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
